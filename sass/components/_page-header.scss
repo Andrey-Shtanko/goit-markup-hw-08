@@ -147,4 +147,8 @@
   &.is-open .icon-menu {
     display: none;
   }
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }

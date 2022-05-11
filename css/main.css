@@ -219,6 +219,9 @@ ul {
 .menu-btn.is-open .icon-menu {
   display: none;
 }
+.menu-btn:hover, .menu-btn:focus {
+  fill: var(--accent-color);
+}
 
 .hero__container {
   width: 100%;
