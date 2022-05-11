@@ -22,48 +22,60 @@
   </head>
   <body>
     <!--шапка-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
-        <nav class="nav">
-          <a class="nav__logo link" href="./index.html"
-            ><span class="nav__logo--first-part">Web</span><span class="nav__logo--second-part">Studio</span></a
-          >
-          <ul class="nav__list list">
-            <li class="nav__item"><a class="nav__link link nav__link--current" href="./index.html">Студия</a></li>
-            <li class="nav__item"><a class="nav__link link" href="./portfolio.html">Портфолио</a></li>
-            <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
-          </ul>
-        </nav>
+        <a class="logo link" href="./index.html"
+          ><span class="logo--first-part">Web</span><span class="logo--second-part">Studio</span></a
+        >
+        <div class="menu-container container">
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a class="nav__link link nav__link--current" href="./index.html">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
+            </ul>
+          </nav>
 
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a class="contacts__link link" href="mailto:info@devstudio.com"
-              ><svg class="mail-icon" width="16px" height="12px">
-                <use href="./images/svg/icons.svg#icon-mail"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link link" href="tel:+380961111111"
-              ><svg class="phone-icon" width="10px" height="16px">
-                <use href="./images/svg/icons.svg#icon-phone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="contacts list">
+            <li class="contacts__item">
+              <a class="contacts__link link" href="mailto:info@devstudio.com"
+                ><svg class="mail-icon" width="16px" height="12px">
+                  <use href="./images/svg/icons.svg#icon-mail"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link link" href="tel:+380961111111"
+                ><svg class="phone-icon" width="10px" height="16px">
+                  <use href="./images/svg/icons.svg#icon-phone"></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="menu-btn" data-menu-button>
+          <svg width="40" height="40" aria-label="переключатель мобильного меню">
+            <use class="icon-menu" href="./images/svg/icons.svg#icon-menu"></use>
+            <use class="icon-cross" href="./images/svg/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <main>
       <!--секция герой-->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="hero__container container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section>
+      </section> -->
 
       <!--наши приемущества-->
-      <section class="advantages section">
+      <!-- <section class="advantages section">
         <div class="container">
           <h2 class="title visually-hidden">наши приемущества</h2>
           <ul class="advantages__list list">
@@ -113,9 +125,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Чем мы занимаемся -->
-      <section class="possibilities section">
+      <!-- <section class="possibilities section">
         <div class="container">
           <h2 class="possibilities__title title">Чем мы занимаемся</h2>
           <ul class="possibilities__list list">
@@ -133,9 +145,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- наша команда -->
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team__list list">
@@ -273,9 +285,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- клиенты -->
-      <section class="clients section">
+      <!-- <section class="clients section">
         <div class="container">
           <h2 class="clients__title title">Постоянные клиенты</h2>
           <ul class="clients__list list">
@@ -317,7 +329,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- Футер -->
     <!-- <footer class="footer">
@@ -427,6 +439,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

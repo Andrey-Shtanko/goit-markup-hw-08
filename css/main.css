@@ -90,9 +90,7 @@ ul {
 .header__container {
   display: flex;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
+  justify-content: space-between;
 }
 
 .nav {
@@ -180,20 +178,49 @@ ul {
   fill: currentColor;
 }
 
-.nav__logo {
+.logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
 }
-.nav__logo--first-part {
+.logo--first-part {
   color: var(--accent-color);
 }
-.nav__logo--second-part {
+.logo--second-part {
   color: #000000;
 }
-.nav__logo--footer-part {
+.logo--footer-part {
   color: var(--hover-text);
+}
+
+.menu-container {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    display: flex;
+  }
+}
+
+.menu-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+}
+
+.menu-btn .icon-cross {
+  display: none;
+}
+
+.menu-btn.is-open .icon-cross {
+  display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+  display: none;
 }
 
 .hero__container {
