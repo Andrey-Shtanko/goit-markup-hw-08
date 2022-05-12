@@ -162,7 +162,8 @@
     display: flex;
   }
 }
-.menu-open-btn {
+.menu-open-btn,
+.menu-close-btn {
   background-color: transparent;
   border: none;
   display: block;
@@ -170,4 +171,10 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.menu-open-btn:hover,
+.menu-open-btn:focus,
+.menu-close-btn:hover,
+.menu-close-btn:focus {
+  fill: var(--accent-color);
 }

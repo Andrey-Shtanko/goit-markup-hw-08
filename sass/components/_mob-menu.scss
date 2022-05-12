@@ -1,0 +1,34 @@
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  padding: 10px 15px 48px 40px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    overflow: auto;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+  }
+  &__link--current {
+    color: var(--accent-color);
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.mob-menu__bottom {
+  margin-top: auto;
+}
