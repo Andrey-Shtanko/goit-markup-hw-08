@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body class="body">
     <!--шапка-->
     <header class="header">
       <div class="container header__container">
@@ -62,7 +62,7 @@
             <use href="./images/svg/icons.svg#icon-menu"></use>
           </svg>
         </button>
-        <div class="mob-menu">
+        <div class="mob-menu is-hidden">
           <div class="mob-menu__container">
             <div class="mob-menu__top">
               <button type="button" class="menu-close-btn">
@@ -85,12 +85,12 @@
             <div class="mob-menu__bottom">
               <ul class="mob-menu-contacts list">
                 <li class="mob-menu-contacts__item">
-                  <a class="mob-menu-contacts__link link" href="tel:+380961111111"
+                  <a class="mob-menu-contacts__tel link" href="tel:+380961111111"
                     >+38 096 111 11 11</a
                   >
                 </li>
                 <li class="mob-menu-contacts__item">
-                  <a class="mob-menu-contacts__link link" href="mailto:info@devstudio.com"
+                  <a class="mob-menu-contacts__mail link" href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
@@ -488,6 +488,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

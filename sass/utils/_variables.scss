@@ -12,6 +12,15 @@
   overflow: hidden;
 }
 
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
 :root {
   --accent-color: #2196f3;
   --primary-text-color: #757575;
