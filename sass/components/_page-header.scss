@@ -17,10 +17,6 @@
 
 .nav__list {
   display: flex;
-  margin-left: 88px;
-  @media screen and (min-width: 1200px) {
-    margin-left: 93px;
-  }
 }
 
 .nav__item {
@@ -72,7 +68,6 @@
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     display: flex;
     flex-direction: column;
-    padding-top: 21px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -82,7 +77,6 @@
 }
 
 .contacts__link {
-  padding-bottom: 10px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
@@ -107,10 +101,16 @@
 
 .contacts__item {
   display: inline-flex;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
     &:last-child {
       margin-right: 0;
+    }
+    &:not(:last-child) {
+      margin-bottom: 0;
     }
   }
 }
@@ -141,6 +141,10 @@
 }
 
 .logo {
+  margin-right: 88px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -160,6 +164,7 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
   }
 }
 .menu-open-btn,
