@@ -617,6 +617,7 @@ ul {
 .footer__logo {
   display: block;
   margin-bottom: 20px;
+  margin-right: 0;
 }
 
 .footer__wrap {
